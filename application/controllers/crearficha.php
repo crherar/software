@@ -8,7 +8,6 @@ class crearficha extends CI_Controller {
 		parent::__construct();
 		$this->load->database();
 		$this->load->model("Fichas_model");
-		
 	}
 
 	public function index()
@@ -29,8 +28,6 @@ class crearficha extends CI_Controller {
 		$email = $this->input->post("email");
 		$historial = $this->input->post("historial");
 
-		echo $nombre;
-
 		$datos = array("rut" => $rut,
 			"nombre" => $nombre,
 			"apellido" => $apellido,
@@ -40,8 +37,10 @@ class crearficha extends CI_Controller {
 			"email" => $email,
 			"historial" => $historial,
 			);
+
 		$this->Fichas_model->guardar($datos);
-		echo "guardado!!!";
+
+		echo "Datos Guardados.";
 	}
 }
 ?>

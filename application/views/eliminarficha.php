@@ -1,6 +1,5 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
+
+<!DOCTYPE html>
 <!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
 <html lang="es-ES">
@@ -20,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </script>
         
 <!-- This site is optimized with the Yoast SEO plugin v3.8 - https://yoast.com/wordpress/plugins/seo/ -->
-<title>Gestión de Fichas Médicas| Cliniestetica.cl - Cuidando de tu belleza</title>
+<title>Eliminar Ficha| Cliniestetica.cl - Cuidando de tu belleza</title>
 <link rel="canonical" href="http://www.cliniestetica.cl/contacto/" />
 <!-- / Yoast SEO plugin. -->
 
@@ -104,7 +103,6 @@ img.emoji {
 
         /* Header ------------------------------------------------------------------------ */  
         #header { background-color: #fff; }
-    
 
         /* Navigation ------------------------------------------------------------------------ */ 
         #header .mb-menu-container{ background-color: transparent; }
@@ -172,23 +170,15 @@ margin-left:15px;
 }    </style>
 
         </head>
-    <body  class="page page-id-25 page-template-default custom-background loading">
-    
-                <!-- Header Search -->
-        <!-- Start Header -->
-        
-        <!-- End Header -->
+   
             <!-- Start Feature -->
     <section id="page-title" style="background-image: url(http://www.cliniestetica.cl/wp-content/uploads/2014/07/fondo-header-interiores.jpg)">
         <!-- Start Container -->
         <div class="container">
             <div class="row">
                 <div class="span7">
-                    <h1>Gestión de Fichas Médicas</h1> 
-                </div>                
-        </div>
-        <div id="header-e1">
-                 <h1>SERVICIO INTRANET</h1>
+                    <h1>Eliminar ficha médica</h1>                </div>                
+            
         </div>
         <!-- End Container -->
     </section>
@@ -200,42 +190,22 @@ margin-left:15px;
         <section id="main">
             <div id="page"><div class="row-container light " style="background-attachment:scroll;background-repeat:repeat;background-position:left top;"><div class="container"><div class="row"><div class="span12 "><div class="row-fluid"><div class="mb-element span8 " ><div class="mb-content"><div role="form" class="wpcf7" id="wpcf7-f4-p25-o1" lang="es-ES" dir="ltr">
 <div class="screen-reader-response"></div>
-<form action="/contacto/#wpcf7-f4-p25-o1" method="post" class="wpcf7-form" novalidate="novalidate">
-<div style="display: none;">
-<input type="hidden" name="_wpcf7" value="4" />
-<input type="hidden" name="_wpcf7_version" value="4.5.1" />
-<input type="hidden" name="_wpcf7_locale" value="es_ES" />
-<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f4-p25-o1" />
-<input type="hidden" name="_wpnonce" value="19e82dda99" />
-</div>
 
-<p><input type="submit" value="Crear nueva ficha médica" class="wpcf7-form-control wpcf7-submit" /></p>
+<form role="form" action="<?php $this->load->helper('url'); echo base_url();?>index.php/eliminarficha/eliminar" method="POST">
 
+    <p>Rut<br/>
+        <input type="text" name="rut" value="" size="40"/>
+    </p>
 
-<p><input type="submit" value="Modificar ficha médica" class="wpcf7-form-control wpcf7-submit" /></p>
+    <p><input type="submit" value="Aceptar" class="wpcf7-form-control wpcf7-submit"/></p>
+
+</form>
 
 
-<p><input type="submit" value="Eliminar ficha médica" class="wpcf7-form-control wpcf7-submit" /></p>
-</section>
+<script src="<?php echo base_url('assets/js/funciones.js');?>"></script>
 
-</div><a id="scrollUp" title="Scroll to top"><i class="icon-chevron-up"></i></a><script type='text/javascript' src='http://www.cliniestetica.cl/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var _wpcf7 = {"loaderUrl":"http:\/\/www.cliniestetica.cl\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptcha":{"messages":{"empty":"Por favor, prueba que no eres un robot."}},"sending":"Enviando...","cached":"1"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='http://www.cliniestetica.cl/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.5.1'></script>
-<script type='text/javascript' src='http://www.cliniestetica.cl/wp-content/plugins/ultimate-responsive-image-slider/js/jquery.sliderPro.js?ver=1.1.0'></script>
-<script type='text/javascript' src='http://www.cliniestetica.cl/wp-content/themes/cliniestetica/assets/js/scripts.js?ver=4.6.1'></script>
-<script type='text/javascript' src='http://www.cliniestetica.cl/wp-content/themes/cliniestetica/assets/js/jquery.mmenu.min.js?ver=4.6.1'></script>
-<script type='text/javascript' src='http://www.cliniestetica.cl/wp-content/themes/cliniestetica/assets/js/masterbip.js?ver=4.6.1'></script>
-<script type='text/javascript' src='http://platform.twitter.com/widgets.js?ver=4.6.1'></script>
-<script type='text/javascript' src='http://apis.google.com/js/plusone.js?ver=4.6.1'></script>
-<script type='text/javascript' src='http://platform.linkedin.com/in.js?ver=4.6.1'></script>
-<script type='text/javascript' src='http://www.cliniestetica.cl/wp-includes/js/wp-embed.min.js?ver=4.6.1'></script>
+
 </body>
 </html>
-<!-- Dynamic page generated in 0.535 seconds. -->
-<!-- Cached page generated by WP-Super-Cache on 2016-11-23 14:41:19 -->
 
-<!-- Compression = gzip -->
+
