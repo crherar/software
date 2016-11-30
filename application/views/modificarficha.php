@@ -4,6 +4,9 @@
 <!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
 <html lang="es-ES">
     <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <!-- Mobile Specific Metas
         ================================================== -->
@@ -19,7 +22,7 @@
         </script>
         
 <!-- This site is optimized with the Yoast SEO plugin v3.8 - https://yoast.com/wordpress/plugins/seo/ -->
-<title>Modificar Ficha| Cliniestetica.cl - Cuidando de tu belleza</title>
+<title>Editar Ficha| Cliniestetica.cl - Cuidando de tu belleza</title>
 <link rel="canonical" href="http://www.cliniestetica.cl/contacto/" />
 <!-- / Yoast SEO plugin. -->
 
@@ -48,6 +51,37 @@ img.emoji {
 	background: none !important;
 	padding: 0 !important;
 }
+#solidborder { border: 2px solid black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    background-color: #49c9e4;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+
+.button {
+    /* Green */
+    border: none;
+    color: white;
+    padding: 3px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1px 1px;
+    cursor: pointer;
+}
+.button1 {background-color: #4CAF50;}/* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+
+
 </style>
 <link rel='stylesheet' id='layerslider-css'  href='http://www.cliniestetica.cl/wp-content/plugins/LayerSlider/static/css/layerslider.css?ver=5.0.2' type='text/css' media='all' />
 <link rel='stylesheet' id='ls-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900|Open+Sans:300|Indie+Flower:regular|Oswald:300,regular,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
@@ -78,9 +112,9 @@ img.emoji {
     <style>
         body {
             font-family: Raleway, Arial, Helvetica, sans-serif;
-            font-size: 14px; 
+            font-size: 17px; 
             font-weight: 400; 
-            color: #2d2d2d;
+            color: #000000;
                     }
         h1,h2,h3,h4,h5,h6,
         .btn,button, .mb-portfolio .mb-filter ul,
@@ -90,14 +124,14 @@ img.emoji {
         input[type="button"],
         .accordion-heading .accordion-toggle,
         .mb-service-content a,.progress .title{font-family: Raleway;}
-        h1{ font-size: 36px; color: #2f2f2f; }
-        h2{ font-size: 24px; color: #2f2f2f; }
-        h3{ font-size: 18px; color: #2f2f2f; }
-        h4{ font-size: 16px; color: #2f2f2f; }
-        h5{ font-size: 14px; color: #2f2f2f; }
-        h6{ font-size: 12px; color: #2f2f2f; }
+        h1{ font-size: 36px; color: #000000 }
+        h2{ font-size: 24px; color: #000000 }
+        h3{ font-size: 18px; color: #000000 }
+        h4{ font-size: 16px; color: #000000 }
+        h5{ font-size: 14px; color: #000000 }
+        h6{ font-size: 12px; color: #000000 }
 
-        a,#sidebar ul.menu .current_page_item a{ color: #2c2c2c; }
+        a,#sidebar ul.menu .current_page_item a{ color: #000000; }
         a:hover, a:focus,article .loop-content a.more-link:hover, .loop-content a:hover, .content-block a:hover{ color: #42b1d3; }
         .loop-meta a:hover,.mb-callout h1 a, .loop-content a, .content-block a,.style_1 .testimonial-item:before,.mb-testimonials .caroufredsel_wrapper a, .mb-testimonials .caroufredsel_wrapper a:hover,.carousel-bullet a.selected, .carousel-bullet a:hover,.image-links a:hover,.mb-carousel-post .carousel-content:hover h3 a{ color: #42b1d3; }
 
@@ -167,7 +201,10 @@ img.emoji {
         .header-style-2 ul.sf-menu > li > a{
 margin-right:15px;
 margin-left:15px;
-}    </style>
+
+}
+
+    </style>
 
         </head>
    
@@ -177,18 +214,68 @@ margin-left:15px;
         <div class="container">
             <div class="row">
                 <div class="span7">
-                    <h1>Modificar ficha médica</h1>                </div>                
-            
+                    <h1><b>Editar ficha médica</b></h1>
+                </div>                
+                 <h1 style="margin-left: 200px"><b>Cliniestética Intranet</b></h1>
         </div>
+  <div><a href="http://localhost:8888/Codeigniter/index.php/crearficha" style="color:white"><b>>> Ir crear ficha médica</b></a></div>
         <!-- End Container -->
     </section>
+    <div>
+        <input type="text" id="buscar" value="" size="40" style="border:solid 2px; margin-top: 15px; margin-left: 10px;" placeholder="FILTRAR POR RUT"/>
+        </div>
+
+    <div id="listapacientes"></div>
+
+
+<div id="solidborder">
+<div class=separar>
+    <b>NOMBRE PACIENTE:</b><div id="nombrepacientemod"></div>
+</div>
+<form id="form-actualizar" role="form" action="http://localhost:8888/Codeigniter/index.php/modificarficha/actualizar" method="POST">
+
+ 
+        <input type="hidden" name="rut_sel" id="rut_sel" value="" size="40"/>
+
+<!-- 
+    <p>Nombre<br/>
+        <input type="text" name="nombre_sel" id="nombre_sel" value="" size="40"/>
+    </p>
+
+    <p>Apellido<br/>
+        <input type="text" name="apellido_sel" id="apellido_sel" value="" size="40"/>
+    </p>
+
+    <p>Fecha nacimiento<br/>
+        <input type="text" name="fecha_nac_sel" id="fecha_nac_sel" value="" size="40"/>
+    </p> -->
+
+    <p><b>Dirección</b><br/>
+        <input type="text" name="direccion_sel" id="direccion_sel" value="" size="40"/>
+    </p>
+
+    <p><b>Celular</b><br/>
+         <input type="text" name="celular_sel" id="celular_sel" value="" size="9"/>
+    </p>
+
+    <p><b>Email</b><br/>     
+        <input type="text" name="email_sel" id="email_sel" value="" size="40"/>
+    </p>
+
+    <p><b>Historial Médico<b><br/>
+        <span class="wpcf7-form-control-wrap your-message"><textarea name="historial_sel" id="historial_sel" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> </p>
+        
+    <input type="submit" id="btnactualizar" value="Aceptar"/>
+
+
+</form>
+</div>
 
 
 
+<script src="http://localhost:8888/Codeigniter/assets/js/funciones.js"></script>
 
 
-
-<script src="<?php echo base_url('assets/js/funciones.js');?>"></script>
 
 
 </body>
