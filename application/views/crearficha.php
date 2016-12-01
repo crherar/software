@@ -176,14 +176,16 @@ margin-left:15px;
         </head>
    
             <!-- Start Feature -->
-    <section id="page-title" style="background-image: url(http://www.cliniestetica.cl/wp-content/uploads/2014/07/fondo-header-interiores.jpg)">
+     <section id="page-title" style="background-image: url(http://www.cliniestetica.cl/wp-content/uploads/2014/07/fondo-header-interiores.jpg)">
         <!-- Start Container -->
         <div class="container">
             <div class="row">
                 <div class="span7">
-                    <h1>Crear nueva ficha médica</h1>                </div>                
-            
+                    <h1><b>Crear nueva ficha médica</b></h1>
+                </div>                
+                 <h1 style="margin-left: 200px"><b>Cliniestética Intranet</b></h1>
         </div>
+  <div><a href="http://localhost:8888/Codeigniter/index.php/modificarficha" style="color:white"><b>>> Ir editar ficha médica </b></a></div>
         <!-- End Container -->
     </section>
     <!-- End Feature -->
@@ -208,35 +210,35 @@ $(document).ready(function(){
 
 <form role="form" action="http://localhost:8888/Codeigniter/index.php/crearficha/guardar" method="POST">
 
-    <p>Rut<br/>
+    <p>Rut
         <input type="text" name="rut" value="" size="40"/>
     </p>
 
-    <p>Nombre<br/>
+    <p>Nombre
         <input type="text" name="nombre" value="" size="40"/>
     </p>
 
-    <p>Apellido<br/>
+    <p>Apellido
         <input type="text" name="apellido" value="" size="40"/>
     </p>
 
-    <p>Fecha nacimiento<br/>
+    <p>Fecha nacimiento
         <input type="text" name="fecha_nac" value="" size="40"/>
     </p>
 
-    <p>Dirección<br/>
+    <p>Dirección
         <input type="text" name="direccion" value="" size="40"/>
     </p>
 
-    <p>Celular<br/>
+    <p>Celular
          <input type="text" name="celular" value="" size="40"/>
     </p>
 
-    <p>Email<br/>     
+    <p>Email    
         <input type="text" name="email" value="" size="40"/>
     </p>
 
-    <p>Historial Médico<br/>
+    <p>Historial Médico
         <span class="wpcf7-form-control-wrap your-message"><textarea name="historial" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> </p>
         
     <input type="submit" value="Aceptar"/>
@@ -245,11 +247,6 @@ $(document).ready(function(){
 </form>
 
  <script src="http://localhost:8888/Codeigniter/assets/js/funciones.js"></script>
-
-
-<p id="target"> HOLAAA </p> 
-   
-
 </body>
 </html>
 

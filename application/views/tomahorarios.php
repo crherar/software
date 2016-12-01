@@ -4,7 +4,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
 <html lang="es-ES">
+
     <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+
+
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <!-- Mobile Specific Metas
         ================================================== -->
@@ -265,25 +270,30 @@ margin-left:15px;
         <section id="loading"></section>
         <!-- End   Loading -->
         <!-- Start Main -->
-        <section id="main">
+
+<section id="main">
             <div id="page"><div class="row-container light " style="background-attachment:scroll;background-repeat:repeat;background-position:left top;"><div class="container"><div class="row"><div class="span12 "><div class="row-fluid"><div class="mb-element span8 " ><div class="mb-content"><div role="form" class="wpcf7" id="wpcf7-f4-p25-o1" lang="es-ES" dir="ltr">
 <div class="screen-reader-response"></div>
-<form action="/contacto/#wpcf7-f4-p25-o1" method="post" class="wpcf7-form" novalidate="novalidate">
-<div style="display: none;">
-<input type="hidden" name="_wpcf7" value="4" />
-<input type="hidden" name="_wpcf7_version" value="4.5.1" />
-<input type="hidden" name="_wpcf7_locale" value="es_ES" />
-<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f4-p25-o1" />
-<input type="hidden" name="_wpnonce" value="19e82dda99" />
-</div>
-<p>Usuario (e-mail)<br />
-    <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span> </p>
 
-<p>Contraseña<br />
-    <span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" /></span> </p>
+<form id="form_login" role="form" action="http://localhost:8888/Codeigniter/index.php/tomahorarios/ingresar" method="POST">
 
-<p><input type="submit" value="Enviar" class="wpcf7-form-control wpcf7-submit" /></p>
+    <p>Email<br/>     
+        <input type="text" name="email" value="" size="40"/>
+    </p>
+
+    <p>Contraseña<br/>     
+        <input type="password" name="password" value="" size="20"/>
+    </p>
+
+    <input type="submit" value="Log In"/>
+
+</form>
+
 </section>
+
+
+<script src="http://localhost:8888/Codeigniter/assets/js/funciones.js"></script>
+
 
 <!-- End Main -->
 <!-- Start Footer -->

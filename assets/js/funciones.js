@@ -3,10 +3,8 @@ $(document).ready(function(){
    mostrarDatos("");
  });
 
-
-$("#buscar").keyup(function(){
-    buscar = $("#buscar").val();
-    mostrarDatos(buscar);
+$(document).ready(function(){
+     mostrarHorario("");
 });
 
 $("#btnactualizar").click(actualizar);
@@ -61,6 +59,11 @@ $("body").on("click", "#listapacientes .button3", function(event){
 
 });
 
+$("#buscar").keyup(function(){
+    buscar = $("#buscar").val();
+    mostrarDatos(buscar);
+});
+
 function mostrarDatos(valor){ 
     $.ajax({
         url:"http://localhost:8888/Codeigniter/index.php/modificarficha/mostrar",
@@ -80,6 +83,101 @@ function mostrarDatos(valor){
         }
     });
 }
+
+/*  ----------------------------------  TOMA DE HORAS ------------------------------------- */
+
+$("#buscar_hora_por_especialista").keyup(function(){
+    buscar_hora_por_especialista = $("#buscar_hora_por_especialista").val();
+    mostrarHorario(buscar_horario_especialista);
+});
+
+$("body").on("click", "#listahorarios .button1", function(event){
+    //event.preventDefault();
+    hora_sel = $(this).parent().parent().children("td:eq(0)").text();
+    //alert(hora_sel);
+    eliminarHora(hora_sel);
+
+});
+
+$("#sel_profesional").on('click', function (event) {   
+         // alert($("#foo option:selected").val());
+         // alert($("#foo option:selected").val());
+         var numeroprof = ($("#foo option:selected").val());
+    
+         var profesion = "prof";
+         if (numeroprof==1){
+            profesion = "Dentista Maxilofacial";
+         }
+         else if(numeroprof==2){
+            profesion= "Kinesiologo";
+         }
+         else if(numeroprof==3){
+            profesion= "Masajeador";
+         }
+         else if(numeroprof==4){
+            profesion= "Podologo";
+         }
+         else if(numeroprof==5){
+            profesion= "Manicurista";
+         }
+         else if(numeroprof==6){
+            profesion= "Esteticista";
+         }
+        else if(numeroprof=='t'){
+            profesion= "";
+         }
+         mostrarHorario(profesion);
+
+});
+
+function mostrarHorario(especialidad){ 
+    $.ajax({
+        url:"http://localhost:8888/Codeigniter/index.php/verhoras/mostrarHorasDisponibles",
+        type:"POST",
+        data:{buscar_por_especialidad:especialidad},
+        success:function(respuesta){
+            var registros = eval(respuesta);
+            html = "<table class='table table-responsive table-bordered'><thead>";
+            html += "<tr><th>ID</th><th>Bloque</th><th>Día</th><th>Mes</th><th>Año</th><th>Estado</th><th>Rut Especialista</th><th>Especialidad</th></tr>";
+            html += "</thead><tbody>";
+            for (var i = 0; i < registros.length; i++) {
+                html += "<tr><td>"+registros[i]["id"]+"</td><td>"+registros[i]["bloque"]+"</td><td>"+registros[i]["dia"]+"</td><td>"+registros[i]["mes"]+"</td><td>"+registros[i]["anio"]+"</td><td>"+registros[i]["estado"]+"</td><td>"+registros[i]["rut_especialista"]+"</td><td>"+registros[i]["especialidad"]+
+                "</td><td><button class='button button1'><b>SOLICITAR HORA</b></button></td></tr>";
+            };
+            html += "</tbody></table>";
+            $("#listahorarios").html(html);
+        }
+    });
+}
+function eliminarHora(id){
+    $.ajax({
+        url:"http://localhost:8888/Codeigniter/index.php/verhoras/eliminarHora",
+        type:"POST",
+        data:{valor:id}, 
+        success:function(respuesta){
+            alert(respuesta);
+        }
+    });
+}
+
+
+// function actualizarEstadoHora(){
+//     $.ajax({
+//         url:"http://localhost:8888/Codeigniter/index.php/verhoras/actualizarHora",
+//         type:"POST",
+//         data:("#form-actualizar").serialize(), 
+//         success:function(respuesta){
+//             alert(respuesta);
+//         }
+//     });
+// }
+
+
+/*  ----------------------------------  FIN TOMA DE HORAS ------------------------------------- */
+
+
+
+
 
 function actualizar(){
     $.ajax({
@@ -104,6 +202,30 @@ function eliminar(rut){
         }
     });
 }
+
+
+
+/* LOGIN */
+
+$("#form_login").submit(function(event){
+    event.preventDefault();
+    $.ajax({
+        url:$(this).attr("action"),
+        type:$(this).attr("method"),
+        data:$(this).serialize(),
+        success:function(respuesta){
+            if(respuesta==="Error en logeo."){
+                alert("Usuario o contraseña incorrectas.");
+            }
+            else{
+                window.location.href="http://localhost:8888/Codeigniter/index.php/verhoras/";
+            }
+           
+        }
+    });
+});
+
+
 
 $("#target").click(function() {
     alert("OK!");

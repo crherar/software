@@ -40,6 +40,17 @@ class Fichas_model extends CI_Model {
 			return false;
 		}
 	}
+
+	// function mostrarhorario($valor){
+	// 	$this->db->like("rut", $valor);
+	// 	$consulta = $this->db->get("Paciente");
+	// 	return $consulta->result();
+	// }
+
+	/*LOGIN*/
+
+	
+
 }
 ?>
 

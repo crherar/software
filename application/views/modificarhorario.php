@@ -1,10 +1,12 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
+
+<!DOCTYPE html>
 <!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
 <html lang="es-ES">
     <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <!-- Mobile Specific Metas
         ================================================== -->
@@ -20,7 +22,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </script>
         
 <!-- This site is optimized with the Yoast SEO plugin v3.8 - https://yoast.com/wordpress/plugins/seo/ -->
-<title>Iniciar Sesión | Cliniestetica.cl - Cuidando de tu belleza</title>
+<title>Editar Horarios| Cliniestetica.cl - Cuidando de tu belleza</title>
 <link rel="canonical" href="http://www.cliniestetica.cl/contacto/" />
 <!-- / Yoast SEO plugin. -->
 
@@ -49,6 +51,37 @@ img.emoji {
 	background: none !important;
 	padding: 0 !important;
 }
+#solidborder { border: 2px solid black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    background-color: #49c9e4;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+
+.button {
+    /* Green */
+    border: none;
+    color: white;
+    padding: 3px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1px 1px;
+    cursor: pointer;
+}
+.button1 {background-color: #4CAF50;}/* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+
+
 </style>
 <link rel='stylesheet' id='layerslider-css'  href='http://www.cliniestetica.cl/wp-content/plugins/LayerSlider/static/css/layerslider.css?ver=5.0.2' type='text/css' media='all' />
 <link rel='stylesheet' id='ls-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900|Open+Sans:300|Indie+Flower:regular|Oswald:300,regular,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
@@ -79,9 +112,9 @@ img.emoji {
     <style>
         body {
             font-family: Raleway, Arial, Helvetica, sans-serif;
-            font-size: 14px; 
+            font-size: 17px; 
             font-weight: 400; 
-            color: #2d2d2d;
+            color: #000000;
                     }
         h1,h2,h3,h4,h5,h6,
         .btn,button, .mb-portfolio .mb-filter ul,
@@ -91,14 +124,14 @@ img.emoji {
         input[type="button"],
         .accordion-heading .accordion-toggle,
         .mb-service-content a,.progress .title{font-family: Raleway;}
-        h1{ font-size: 36px; color: #2f2f2f; }
-        h2{ font-size: 24px; color: #2f2f2f; }
-        h3{ font-size: 18px; color: #2f2f2f; }
-        h4{ font-size: 16px; color: #2f2f2f; }
-        h5{ font-size: 14px; color: #2f2f2f; }
-        h6{ font-size: 12px; color: #2f2f2f; }
+        h1{ font-size: 36px; color: #000000 }
+        h2{ font-size: 24px; color: #000000 }
+        h3{ font-size: 18px; color: #000000 }
+        h4{ font-size: 16px; color: #000000 }
+        h5{ font-size: 14px; color: #000000 }
+        h6{ font-size: 12px; color: #000000 }
 
-        a,#sidebar ul.menu .current_page_item a{ color: #2c2c2c; }
+        a,#sidebar ul.menu .current_page_item a{ color: #000000; }
         a:hover, a:focus,article .loop-content a.more-link:hover, .loop-content a:hover, .content-block a:hover{ color: #42b1d3; }
         .loop-meta a:hover,.mb-callout h1 a, .loop-content a, .content-block a,.style_1 .testimonial-item:before,.mb-testimonials .caroufredsel_wrapper a, .mb-testimonials .caroufredsel_wrapper a:hover,.carousel-bullet a.selected, .carousel-bullet a:hover,.image-links a:hover,.mb-carousel-post .carousel-content:hover h3 a{ color: #42b1d3; }
 
@@ -168,188 +201,84 @@ img.emoji {
         .header-style-2 ul.sf-menu > li > a{
 margin-right:15px;
 margin-left:15px;
-}    </style>
+
+}
+
+    </style>
 
         </head>
-    <body  class="page page-id-25 page-template-default custom-background loading">
-            <div id="theme-layout" class="theme-full">                            <div class="mb-top-bar top-bar-light">
-                    <div class="container">
-                        <div class="row">
-                            <div class="span7">
-                                <div class="mb-top-widget left" id="text-2">			<div class="textwidget"><strong>Contacto Rápido:</strong> <span class="llamenos">Llámenos: (+56 9) 6238 1491</span> <span class="escribenos">Escribenos: contacto@cliniestetica.cl</span></div>
-		</div>                            </div>
-                            <div class="span5">
-                                <div class="mb-top-widget right" id="text-3">			<div class="textwidget">Siguenos en Facebook: <a href="#" target="_blank"><img src="http://www.cliniestetica.cl/wp-content/uploads/2014/07/facebook.png" /></a></div>
-		</div>                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Header Search -->
-        <!-- Start Header -->
-        <header id="header" class="header-style-2 affix">
-            <div class="container">
-                <div class="show-mobile-menu hidden-desktop clearfix">
-                    <a href="#mobile-menu" class="mobile-menu-icon">
-                        <span></span><span></span><span></span><span></span>
-                    </a>
-                </div>
-                                    <div class="row header" style="line-height: 140px">
-                        <div class="span3">
-                            <div class="mb-logo"><a class="logo" href="http://www.cliniestetica.cl"><img class="logo-img" src="http://www.cliniestetica.cl/wp-content/uploads/2014/07/logo-cliniestetica-top-x2.png" style="width:170px" alt="CliniEstetica"/></a></div>                        </div>
-                                                    <div class="span9">
-                                <nav class="menu-container visible-desktop clearfix">
-                                    <div class="mb-menu-container with-search">
-                                        <ul id="menu" class="sf-menu"><li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="http://www.cliniestetica.cl/">Inicio</a></li>
-<li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-29"><a href="http://www.cliniestetica.cl/servicios/">Servicios</a>
-<ul class="sub-menu">
-	<li id="menu-item-124" class="menu-item menu-item-type-taxonomy menu-item-object-cat_portfolio menu-item-124"><a href="http://www.cliniestetica.cl/servicios_cat/medicina-estetica-facial/">Medicina Estetica Facial</a></li>
-	<li id="menu-item-886" class="menu-item menu-item-type-taxonomy menu-item-object-cat_portfolio menu-item-886"><a href="http://www.cliniestetica.cl/servicios_cat/microblading-y-micropigmentacion/">Microblading y Micropigmentacion</a></li>
-	<li id="menu-item-80" class="menu-item menu-item-type-taxonomy menu-item-object-cat_portfolio menu-item-80"><a href="http://www.cliniestetica.cl/servicios_cat/depilacion/">Depilacion</a></li>
-	<li id="menu-item-86" class="menu-item menu-item-type-taxonomy menu-item-object-cat_portfolio menu-item-86"><a href="http://www.cliniestetica.cl/servicios_cat/tratamientos-corporales/">Corporales</a></li>
-	<li id="menu-item-87" class="menu-item menu-item-type-taxonomy menu-item-object-cat_portfolio menu-item-87"><a href="http://www.cliniestetica.cl/servicios_cat/tratamientos-faciales/">Faciales</a></li>
-	<li id="menu-item-84" class="menu-item menu-item-type-taxonomy menu-item-object-cat_portfolio menu-item-84"><a href="http://www.cliniestetica.cl/servicios_cat/post-operatorio/">Post Operatorio</a></li>
-</ul>
-</li>
-<li id="menu-item-216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216"><a href="http://www.cliniestetica.cl/resultados-de-tratamientos/">Resultados</a></li>
-<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-25 current_page_item menu-item-32"><a href="http://www.cliniestetica.cl/contacto/">Contacto</a></li>
-<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-25 current_page_item menu-item-32"><a href="http://www.cliniestetica.cl/iniciosesion/">Iniciar Sesión</a></li>
-</ul>                                        <div class="search-on-menu mini">
-                                            <form role="search" method="get" id="searchform" action="http://www.cliniestetica.cl/" >
-    <div class="input">
-        <i class="icon-search"></i><input class="span12" type="text" value="" name="s" id="s" placeholder="Ingrese su busqueda y presione ENTER">
-    </div>
-    </form>                                        </div>
-                                    </div>
-                                </nav>
-                            </div>
-                                            </div>
-                                
-            </div>
-
-            <nav id="mobile-menu" class=" mm-is-menu">
-                    <ul id="menu-menu-principal" class="clearfix"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-27"><a href="http://www.cliniestetica.cl/">Inicio</a></li>
-
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-29"><a href="http://www.cliniestetica.cl/servicios/">Servicios</a>
-<ul class="sub-menu">
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-cat_portfolio menu-item-124"><a href="http://www.cliniestetica.cl/servicios_cat/medicina-estetica-facial/">Medicina Estetica Facial</a></li>
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-cat_portfolio menu-item-886"><a href="http://www.cliniestetica.cl/servicios_cat/microblading-y-micropigmentacion/">Microblading y Micropigmentacion</a></li>
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-cat_portfolio menu-item-80"><a href="http://www.cliniestetica.cl/servicios_cat/depilacion/">Depilacion</a></li>
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-cat_portfolio menu-item-86"><a href="http://www.cliniestetica.cl/servicios_cat/tratamientos-corporales/">Corporales</a></li>
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-cat_portfolio menu-item-87"><a href="http://www.cliniestetica.cl/servicios_cat/tratamientos-faciales/">Faciales</a></li>
-	<li class="menu-item menu-item-type-taxonomy menu-item-object-cat_portfolio menu-item-84"><a href="http://www.cliniestetica.cl/servicios_cat/post-operatorio/">Post Operatorio</a></li>
-</ul>
-</li>
-
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216"><a href="http://www.cliniestetica.cl/resultados-de-tratamientos/">Resultados</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-25 current_page_item menu-item-32"><a href="http://www.cliniestetica.cl/contacto/">Contacto</a></li>
-
-<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-25 current_page_item menu-item-33"><a href="http://www.cliniestetica.cl/iniciosesion/">Iniciar Sesión</a></li>
-
-
-</ul>            </nav>
-        </header>
-        <!-- End Header -->
+   
             <!-- Start Feature -->
     <section id="page-title" style="background-image: url(http://www.cliniestetica.cl/wp-content/uploads/2014/07/fondo-header-interiores.jpg)">
         <!-- Start Container -->
         <div class="container">
             <div class="row">
                 <div class="span7">
-                    <h1>Iniciar Sesión de Usuario</h1>                </div>                
-                <div class="span5"><div id="crumbs" class="mb-breadcrumb pull-right"> <span><a href="http://www.cliniestetica.cl">Home</a></span>&raquo<span class="current">Inicio Sesión</span></div></div>            </div>
+                    <h1><b>Editar Horarios</b></h1>
+                </div>                
+                 <h1 style="margin-left: 200px"><b>Cliniestética Intranet</b></h1>
         </div>
+  <div><a href="http://localhost:8888/Codeigniter/index.php/crearficha" style="color:white"><b>>> Ir crear nuevo horario</b></a></div>
         <!-- End Container -->
     </section>
-    <!-- End Feature -->
-        <!-- Start Loading -->
-        <section id="loading"></section>
-        <!-- End   Loading -->
-        <!-- Start Main -->
-        <section id="main">
-            <div id="page"><div class="row-container light " style="background-attachment:scroll;background-repeat:repeat;background-position:left top;"><div class="container"><div class="row"><div class="span12 "><div class="row-fluid"><div class="mb-element span8 " ><div class="mb-content"><div role="form" class="wpcf7" id="wpcf7-f4-p25-o1" lang="es-ES" dir="ltr">
-<div class="screen-reader-response"></div>
-<form action="/contacto/#wpcf7-f4-p25-o1" method="post" class="wpcf7-form" novalidate="novalidate">
-<div style="display: none;">
-<input type="hidden" name="_wpcf7" value="4" />
-<input type="hidden" name="_wpcf7_version" value="4.5.1" />
-<input type="hidden" name="_wpcf7_locale" value="es_ES" />
-<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f4-p25-o1" />
-<input type="hidden" name="_wpnonce" value="19e82dda99" />
-</div>
-<p>Usuario (e-mail)<br />
-    <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" /></span> </p>
-
-<p>Contraseña<br />
-    <span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" /></span> </p>
-
-<p><input type="submit" value="Enviar" class="wpcf7-form-control wpcf7-submit" /></p>
-</section>
-
-<!-- End Main -->
-<!-- Start Footer -->
-<footer id="footer">
-    
-        <!-- Start Container-->
-        <div class="container">
-            <div class="row">
-                <div class="span3 col-1"><aside class="widget widget_text" id="text-4">			<div class="textwidget"><p><a href="#" title="CliniEstetic"><img src="http://www.cliniestetica.cl/wp-content/uploads/2014/07/logo-cliniestetica-footer.png" /></a></p>
-<p><a href="http://www.cliniestetica.cl/" title="Cliniestetica.cl - Tratamientos de belleza Efectivos, Inteligentes y Seguros, con más alta tecnología y la mejor atención">Tratamientos de belleza</a> Efectivos, Inteligentes y Seguros, con más alta tecnología y la mejor atención.</p>
-</div>
-		</aside></div><div class="span3 col-2"><aside class="widget widget_nav_menu" id="nav_menu-2"><div class="mb-widget-title-container"><h3 class="widget-title">MAPA DE NAVEGACIÓN</h3><span class="mb-title-border"></span></div><div class="menu-mapa-de-navegacion-container"><ul id="menu-mapa-de-navegacion" class="menu"><li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="http://www.cliniestetica.cl/">Inicio</a></li>
-<li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41"><a href="http://www.cliniestetica.cl/servicios/">Servicios</a></li>
-<li id="menu-item-217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-217"><a href="http://www.cliniestetica.cl/resultados-de-tratamientos/">Resultados</a></li>
-<li id="menu-item-877" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-877"><a href="http://www.cliniestetica.cl/microblading-y-micropigmentacion__trashed/">Microblading y Micropigmentación</a></li>
-<li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-25 current_page_item menu-item-36"><a href="http://www.cliniestetica.cl/contacto/">Contacto</a></li>
-
-<li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-25 current_page_item menu-item-36"><a href="http://www.cliniestetica.cl/iniciosesion/">Iniciar Sesión</a></li>
-
-
-</ul></div></aside></div><div class="span3 col-3"><aside class="widget widget_nav_menu" id="nav_menu-3"><div class="mb-widget-title-container"><h3 class="widget-title">Cuidado y Belleza Corporal</h3><span class="mb-title-border"></span></div><div class="menu-servicios-footer-container"><ul id="menu-servicios-footer" class="menu"><li id="menu-item-72" class="menu-item menu-item-type-taxonomy menu-item-object-cat_portfolio menu-item-72"><a href="http://www.cliniestetica.cl/servicios_cat/depilacion/">Depilacion</a></li>
-<li id="menu-item-126" class="menu-item menu-item-type-taxonomy menu-item-object-cat_portfolio menu-item-126"><a href="http://www.cliniestetica.cl/servicios_cat/medicina-estetica-facial/">Medicina Estetica Facial</a></li>
-<li id="menu-item-76" class="menu-item menu-item-type-taxonomy menu-item-object-cat_portfolio menu-item-76"><a href="http://www.cliniestetica.cl/servicios_cat/post-operatorio/">Post Operatorio</a></li>
-<li id="menu-item-78" class="menu-item menu-item-type-taxonomy menu-item-object-cat_portfolio menu-item-78"><a href="http://www.cliniestetica.cl/servicios_cat/tratamientos-corporales/">Corporales</a></li>
-<li id="menu-item-79" class="menu-item menu-item-type-taxonomy menu-item-object-cat_portfolio menu-item-79"><a href="http://www.cliniestetica.cl/servicios_cat/tratamientos-faciales/">Faciales</a></li>
-</ul></div></aside></div><div class="span3 col-4"><aside class="widget widget_text" id="text-5"><div class="mb-widget-title-container"><h3 class="widget-title">Ubicación y Contacto</h3><span class="mb-title-border"></span></div>			<div class="textwidget"><p><strong>Dirección:</strong> Huanhuali #850, oficina 402. Edificio Terra Office,  La Serena.<br/>
-<strong> Celular:</strong> (+56 9) 6238 1491<br/>
-<strong>Email:</strong> contacto@cliniestetica.cl</p>
-<p>Siguenos en Facebook: <a href="#" target="_blank"><img src="http://www.cliniestetica.cl/wp-content/uploads/2014/07/facebook.png"></a></p></div>
-		</aside></div>            </div>
+    <div>
+        <input type="text" id="buscar" value="" size="40" style="border:solid 2px; margin-top: 15px; margin-left: 10px;" placeholder="FILTRAR POR RUT"/>
         </div>
-        <!-- End Container -->
-    
-            <!-- End Footer -->
-            <div id="bottom">
-            <!-- Start Container -->
-            <div class="container">
-                <div class="row">
-                    <div class="span6">
-                        <p class="copyright"><a href="#" title='CliniEstetica | Cuidando de tu belleza'>CliniEstetica</a> Todos los derechos reservados.</p>
-                    </div>
-                    <div class="span6">
-                                            </div>
-                </div>
-            </div>
-            <!-- End Container -->
-        </div>
-    </footer>
-</div><a id="scrollUp" title="Scroll to top"><i class="icon-chevron-up"></i></a><script type='text/javascript' src='http://www.cliniestetica.cl/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var _wpcf7 = {"loaderUrl":"http:\/\/www.cliniestetica.cl\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptcha":{"messages":{"empty":"Por favor, prueba que no eres un robot."}},"sending":"Enviando...","cached":"1"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='http://www.cliniestetica.cl/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.5.1'></script>
-<script type='text/javascript' src='http://www.cliniestetica.cl/wp-content/plugins/ultimate-responsive-image-slider/js/jquery.sliderPro.js?ver=1.1.0'></script>
-<script type='text/javascript' src='http://www.cliniestetica.cl/wp-content/themes/cliniestetica/assets/js/scripts.js?ver=4.6.1'></script>
-<script type='text/javascript' src='http://www.cliniestetica.cl/wp-content/themes/cliniestetica/assets/js/jquery.mmenu.min.js?ver=4.6.1'></script>
-<script type='text/javascript' src='http://www.cliniestetica.cl/wp-content/themes/cliniestetica/assets/js/masterbip.js?ver=4.6.1'></script>
-<script type='text/javascript' src='http://platform.twitter.com/widgets.js?ver=4.6.1'></script>
-<script type='text/javascript' src='http://apis.google.com/js/plusone.js?ver=4.6.1'></script>
-<script type='text/javascript' src='http://platform.linkedin.com/in.js?ver=4.6.1'></script>
-<script type='text/javascript' src='http://www.cliniestetica.cl/wp-includes/js/wp-embed.min.js?ver=4.6.1'></script>
+
+    <div id="listapacientes"></div>
+
+
+<div id="solidborder">
+<div class=separar>
+    <b>NOMBRE PACIENTE:</b><div id="nombrepacientemod"></div>
+</div>
+<form id="form-actualizar" role="form" action="http://localhost:8888/Codeigniter/index.php/modificarficha/actualizar" method="POST">
+
+ 
+        <input type="hidden" name="rut_sel" id="rut_sel" value="" size="40"/>
+
+<!-- 
+    <p>Nombre<br/>
+        <input type="text" name="nombre_sel" id="nombre_sel" value="" size="40"/>
+    </p>
+
+    <p>Apellido<br/>
+        <input type="text" name="apellido_sel" id="apellido_sel" value="" size="40"/>
+    </p>
+
+    <p>Fecha nacimiento<br/>
+        <input type="text" name="fecha_nac_sel" id="fecha_nac_sel" value="" size="40"/>
+    </p> -->
+
+    <p><b>Dirección</b><br/>
+        <input type="text" name="direccion_sel" id="direccion_sel" value="" size="40"/>
+    </p>
+
+    <p><b>Celular</b><br/>
+         <input type="text" name="celular_sel" id="celular_sel" value="" size="9"/>
+    </p>
+
+    <p><b>Email</b><br/>     
+        <input type="text" name="email_sel" id="email_sel" value="" size="40"/>
+    </p>
+
+    <p><b>Historial Médico<b><br/>
+        <span class="wpcf7-form-control-wrap your-message"><textarea name="historial_sel" id="historial_sel" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> </p>
+        
+    <input type="submit" id="btnactualizar" value="Aceptar"/>
+
+
+</form>
+</div>
+
+
+
+<script src="http://localhost:8888/Codeigniter/assets/js/funciones.js"></script>
+
+
+
+
 </body>
 </html>
-<!-- Dynamic page generated in 0.535 seconds. -->
-<!-- Cached page generated by WP-Super-Cache on 2016-11-23 14:41:19 -->
 
-<!-- Compression = gzip -->
+

@@ -4,6 +4,9 @@
 <!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
 <html lang="es-ES">
     <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <!-- Mobile Specific Metas
         ================================================== -->
@@ -19,7 +22,7 @@
         </script>
         
 <!-- This site is optimized with the Yoast SEO plugin v3.8 - https://yoast.com/wordpress/plugins/seo/ -->
-<title>Crear Ficha| Cliniestetica.cl - Cuidando de tu belleza</title>
+<title>Horarios de Atención| Cliniestetica.cl - Cuidando de tu belleza</title>
 <link rel="canonical" href="http://www.cliniestetica.cl/contacto/" />
 <!-- / Yoast SEO plugin. -->
 
@@ -31,23 +34,54 @@
 <link rel="alternate" type="application/rss+xml" title="CliniEstetica &raquo; Feed" href="http://www.cliniestetica.cl/feed/" />
 <link rel="alternate" type="application/rss+xml" title="CliniEstetica &raquo; RSS de los comentarios" href="http://www.cliniestetica.cl/comments/feed/" />
 <link rel="alternate" type="application/rss+xml" title="CliniEstetica &raquo; Contacto RSS de los comentarios" href="http://www.cliniestetica.cl/contacto/feed/" />
-        <script type="text/javascript">
-            window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.cliniestetica.cl\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.1"}};
-            !function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
-        </script>
-        <style type="text/css">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.cliniestetica.cl\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.1"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
 img.wp-smiley,
 img.emoji {
-    display: inline !important;
-    border: none !important;
-    box-shadow: none !important;
-    height: 1em !important;
-    width: 1em !important;
-    margin: 0 .07em !important;
-    vertical-align: -0.1em !important;
-    background: none !important;
-    padding: 0 !important;
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
 }
+#solidborder { border: 2px solid black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    background-color: #49c9e4;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+
+.button {
+    /* Green */
+    border: none;
+    color: white;
+    padding: 3px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1px 1px;
+    cursor: pointer;
+}
+.button1 {background-color: #4CAF50;}/* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.button5 {background-color: #555555;} /* Black */
+
+
 </style>
 <link rel='stylesheet' id='layerslider-css'  href='http://www.cliniestetica.cl/wp-content/plugins/LayerSlider/static/css/layerslider.css?ver=5.0.2' type='text/css' media='all' />
 <link rel='stylesheet' id='ls-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900|Open+Sans:300|Indie+Flower:regular|Oswald:300,regular,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
@@ -78,9 +112,9 @@ img.emoji {
     <style>
         body {
             font-family: Raleway, Arial, Helvetica, sans-serif;
-            font-size: 14px; 
+            font-size: 17px; 
             font-weight: 400; 
-            color: #2d2d2d;
+            color: #000000;
                     }
         h1,h2,h3,h4,h5,h6,
         .btn,button, .mb-portfolio .mb-filter ul,
@@ -90,14 +124,14 @@ img.emoji {
         input[type="button"],
         .accordion-heading .accordion-toggle,
         .mb-service-content a,.progress .title{font-family: Raleway;}
-        h1{ font-size: 36px; color: #2f2f2f; }
-        h2{ font-size: 24px; color: #2f2f2f; }
-        h3{ font-size: 18px; color: #2f2f2f; }
-        h4{ font-size: 16px; color: #2f2f2f; }
-        h5{ font-size: 14px; color: #2f2f2f; }
-        h6{ font-size: 12px; color: #2f2f2f; }
+        h1{ font-size: 36px; color: #000000 }
+        h2{ font-size: 24px; color: #000000 }
+        h3{ font-size: 18px; color: #000000 }
+        h4{ font-size: 16px; color: #000000 }
+        h5{ font-size: 14px; color: #000000 }
+        h6{ font-size: 12px; color: #000000 }
 
-        a,#sidebar ul.menu .current_page_item a{ color: #2c2c2c; }
+        a,#sidebar ul.menu .current_page_item a{ color: #000000; }
         a:hover, a:focus,article .loop-content a.more-link:hover, .loop-content a:hover, .content-block a:hover{ color: #42b1d3; }
         .loop-meta a:hover,.mb-callout h1 a, .loop-content a, .content-block a,.style_1 .testimonial-item:before,.mb-testimonials .caroufredsel_wrapper a, .mb-testimonials .caroufredsel_wrapper a:hover,.carousel-bullet a.selected, .carousel-bullet a:hover,.image-links a:hover,.mb-carousel-post .carousel-content:hover h3 a{ color: #42b1d3; }
 
@@ -167,55 +201,53 @@ img.emoji {
         .header-style-2 ul.sf-menu > li > a{
 margin-right:15px;
 margin-left:15px;
-}    </style>
+
+}
+
+    </style>
 
         </head>
    
             <!-- Start Feature -->
-    <section id="page-title" style="background-image: url(http://www.cliniestetica.cl/wp-content/uploads/2014/07/fondo-header-interiores.jpg)">
-        <!-- Start Container -->
-        <div class="container">
-            <div class="row">
-                <div class="span7">
-                    <h1>Iniciar Sesión</h1>
-                    <h1> CLINIESTÉTICA SERVICIO INTRANET</h1>              
-             </div>                
-            
-        </div>
+                <section id="page-title" style="background-image: url(http://www.cliniestetica.cl/wp-content/uploads/2014/07/fondo-header-interiores.jpg)">
+                    <!-- Start Container -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="span7">
+                                <h1><b>Horas de atención disponibles</b></h1>
+                            </div>                
+                             <h1 style="margin-left: 290px"><b>Cliniestética</b></h1>
+                    </div>
+              <div><a href="http://localhost:8888/Codeigniter/index.php/tomahorarios" style="color:white"><b>>> Cerrar sesión</b></a></div>
         <!-- End Container -->
     </section>
-    <!-- End Feature -->
-        <!-- Start Loading -->
-        <section id="loading"></section>
-        <!-- End   Loading -->
-        <!-- Start Main -->
-        <section id="main">
-            <div id="page"><div class="row-container light " style="background-attachment:scroll;background-repeat:repeat;background-position:left top;"><div class="container"><div class="row"><div class="span12 "><div class="row-fluid"><div class="mb-element span8 " ><div class="mb-content"><div role="form" class="wpcf7" id="wpcf7-f4-p25-o1" lang="es-ES" dir="ltr">
-<div class="screen-reader-response"></div>
+  
+<div>
+    <div style="display:inline-block;">
+    <select id="foo">
+    <option value="t">Todos</option>
+      <option value="1">Dentista Maxilofacial</option>
+      <option value="2">Kinesiólogo</option>
+      <option value="3">Masajeador</option>
+       <option value="4">Podólogo</option>
+        <option value="5">Manicurista</option>
+        <option value="6">Esteticista</option>
 
-<form role="form" action="<?php $this->load->helper('url'); echo base_url();?>index.php/iniciarsesionespecialista/login" method="POST">
+    </select>
+    </div>
+<div style="display:inline-block;">
+    <input type="button" id="sel_profesional" value="Seleccionar"/>
+</div>
+    <div id="listahorarios"></div>
 
-    <p>Rut<br/>
-        <input type="text" name="rut" value="" size="40"/>
-    </p>
+</div>
 
-     <p>Contraseña<br/>
-        <input type="text" name="password" value="" size="40"/>
-    </p>
+<script src="http://localhost:8888/Codeigniter/assets/js/funciones.js"></script>
 
-    <p><input type="submit" value="Iniciar" class="wpcf7-form-control wpcf7-submit"/></p>
 
-</form>
-
-<script src="<?php echo base_url('assets/js/funciones.js');?>"></script>
 
 
 </body>
 </html>
-<!-- Dynamic page generated in 0.535 seconds. -->
-<!-- Cached page generated by WP-Super-Cache on 2016-11-23 14:41:19 -->
-
-<!-- Compression = gzip -->
-
 
 
